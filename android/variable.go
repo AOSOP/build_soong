@@ -98,7 +98,7 @@ type variableProperties struct {
 		}
 
 		// include Optimized variables
-		*android.Product_variables
+		Optimized android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -174,7 +174,7 @@ type productVariables struct {
 	DeviceKernelHeaders []string `json:",omitempty"`
 
 	// include Optimized variables
-	*android.ProductVariables
+	Optimized android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
